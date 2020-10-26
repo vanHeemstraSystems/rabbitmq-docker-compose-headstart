@@ -5,3 +5,31 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
+## Create a docker-compose.yml file
+
+```
+
+```
+docker-compose.yml
+
+## Create a Dockerfile file
+
+```
+
+```
+Dockerfile
+
+## Create a rabbitmq.conf file
+
+```
+
+```
+rabbitmq.conf
+
+## Create a definitions.json file
+
+```
+
+```
+definitions.json
+
