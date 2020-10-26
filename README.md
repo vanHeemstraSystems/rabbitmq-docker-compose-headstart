@@ -23,6 +23,8 @@ Dockerfile
 
 Reference: https://www.rabbitmq.com/configure.html#config-file
 
+Reference: https://www.rabbitmq.com/management.html
+
 ```
 
 ```
