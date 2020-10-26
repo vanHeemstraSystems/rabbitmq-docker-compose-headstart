@@ -8,7 +8,58 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
 ## Create a definitions.json file
 
 ```
-
+{
+  "users": [
+    {
+      "name": "guest",
+      "password": "guest",
+      "tags": "administrator"
+    },
+    {
+      "name": "john",
+      "password": "s3cr3t",
+      "tags": "administrator"
+    }    
+  ],
+  
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  
+  "permission": [
+    {
+      "user": "guest",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "john",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  
+  "parameters": [],
+  
+  "policies": [],
+  
+  "exchanges": [
+    {
+      "name": "foo.exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      
+    }
+  ]
+  
+}
 ```
 definitions.json
 
