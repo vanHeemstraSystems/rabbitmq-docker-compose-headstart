@@ -55,7 +55,54 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
       "vhost": "/",
       "type": "fanout",
       "durable": true,
-      
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  
+  "queues": [
+    {
+      "name": "foo.bar",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "foo.qux",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "foo.waldo",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }    
+  ],
+  
+  "bindings": [
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.bar",
+      "routing_key": "foo.bar.#"
+    },
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.qux",
+      "routing_key": "foo.qux.#"
+    },
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.waldo",
+      "routing_key": "foo.waldo.#"
     }
   ]
   
