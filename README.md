@@ -19,6 +19,12 @@ Reference: https://www.rabbitmq.com/configure.html#config-file
 Reference: https://www.rabbitmq.com/management.html
 
 ```
+loopback_users.guest = false
+listeners.tcp.default = 5672
+hipe_compile = false
+management.listener.port = 15672
+management.listener.ssl = false
+management.load_definitions = /etc/rabbitmq/definitions.json
 
 ```
 rabbitmq.conf
