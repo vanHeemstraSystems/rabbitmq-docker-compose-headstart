@@ -5,19 +5,12 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
-## Create a docker-compose.yml file
+## Create a definitions.json file
 
 ```
 
 ```
-docker-compose.yml
-
-## Create a Dockerfile file
-
-```
-
-```
-Dockerfile
+definitions.json
 
 ## Create a rabbitmq.conf file
 
@@ -30,10 +23,19 @@ Reference: https://www.rabbitmq.com/management.html
 ```
 rabbitmq.conf
 
-## Create a definitions.json file
+## Create a Dockerfile file
+
+```
+FROM rabbitmq:3-management
+
+COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
+COPY definitions.json /etc/rabbitmq/definitions.json
+```
+Dockerfile
+
+## Create a docker-compose.yml file
 
 ```
 
 ```
-definitions.json
-
+docker-compose.yml
