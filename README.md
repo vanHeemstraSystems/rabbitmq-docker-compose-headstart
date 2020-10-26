@@ -21,6 +21,8 @@ Dockerfile
 
 ## Create a rabbitmq.conf file
 
+Reference: https://www.rabbitmq.com/configure.html#config-file
+
 ```
 
 ```
