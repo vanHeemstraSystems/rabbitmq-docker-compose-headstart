@@ -1,4 +1,6 @@
-version: '3.7'
+version: '3.7' # specify docker-compose version
+
+# 
 services: 
   myrabbitmq:
     build: .
