@@ -31,6 +31,27 @@ See https://docs.docker.com/compose/install/
 docker-compose --version
 ```
 
+## The Post-installation steps for Linux documentation reveals the following steps:
+
+See https://stackoverflow.com/questions/21871479/docker-cant-connect-to-docker-daemon
+
+1. Create the docker group.
+```
+sudo groupadd docker
+```
+
+2. Add the user to the docker group.
+```
+sudo usermod -aG docker $(whoami)
+```
+
+3. Log out and log back in to ensure docker runs with correct permissions.
+
+4. Start docker.
+```
+sudo service docker start
+```
+
 ## Create a working directory for RabbitMQ
 
 ```
