@@ -5,6 +5,10 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
+## Install Docker
+
+See https://docs.docker.com/engine/install/centos/
+
 ## Create a definitions.json file
 
 From your project directory, create a file called 'definitions.json' with the following content:
