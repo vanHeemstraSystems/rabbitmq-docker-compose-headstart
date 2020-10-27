@@ -90,19 +90,22 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.bar",
-      "routing_key": "foo.bar.#"
+      "routing_key": "foo.bar.#",
+      "arguments": {}
     },
     {
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.qux",
-      "routing_key": "foo.qux.#"
+      "routing_key": "foo.qux.#",
+      "arguments": {}
     },
     {
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.waldo",
-      "routing_key": "foo.waldo.#"
+      "routing_key": "foo.waldo.#",
+      "arguments": {}
     }
   ]
   
