@@ -5,6 +5,12 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
+## Prerequisites
+
+Install Google Chrome
+
+See https://www.cyberciti.biz/faq/howto-install-google-chrome-on-redhat-rhel-fedora-centos-linux/
+
 ## Install Docker Engine
 
 See https://docs.docker.com/engine/install/centos/
