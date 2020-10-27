@@ -186,7 +186,9 @@ Dockerfile
 From your project directory, create a file called 'docker-compose.yml' with the following content:
 
 ```
-version: '3.7'
+version: '3.7' # specify docker-compose version
+
+# Define the services/containers to be run
 services: 
   myrabbitmq:
     build: .
