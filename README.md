@@ -164,6 +164,8 @@ docker-compose.yml
 
 ... to do.
 
+See also https://docs.docker.com/compose/gettingstarted/
+
 ## Browse the Management Console
 
 Open https://localhost:15672 to see the Management Console
