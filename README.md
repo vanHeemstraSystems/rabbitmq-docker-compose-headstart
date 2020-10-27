@@ -28,7 +28,7 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
     }
   ],
   
-  "permission": [
+  "permissions": [
     {
       "user": "guest",
       "vhost": "/",
