@@ -158,3 +158,26 @@ services:
       - 5672:5672
 ```
 docker-compose.yml
+
+
+## Run docker compose
+
+... to do.
+
+## Browse the Management Console
+
+Open https://localhost:15672 to see the Management Console
+
+You can log in either with the default account:
+
+- Username: guest
+- Password: guest
+
+Or with the custom created account:
+
+- Username: john
+- Password: s3cr3t
+
+## Send and receive messages
+
+... to do.
