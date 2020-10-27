@@ -31,6 +31,12 @@ See https://docs.docker.com/compose/install/
 docker-compose --version
 ```
 
+## Create a working directory for RabbitMQ
+
+```
+mkdir /etc/rabbitmq
+```
+
 ## Create a definitions.json file
 
 From your project directory, create a file called 'definitions.json' with the following content:
