@@ -256,3 +256,17 @@ Or with the custom created account:
 ## Send and receive messages
 
 ... to do.
+
+## Stop Docker Compose
+
+If you started Compose with ```docker-compose up -d```, stop your services once you’ve finished with them:
+
+```
+$ docker-compose stop
+```
+
+You can bring everything down, removing the containers entirely, with the down command. Pass --volumes to also remove any data volumes container:
+
+```
+$ docker-compose down --volumes
+```
