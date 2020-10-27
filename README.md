@@ -7,6 +7,8 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
 
 ## Create a definitions.json file
 
+From your project directory, create a file called 'definitions.json' with the following content:
+
 ```
 {
   "users": [
@@ -122,6 +124,8 @@ Reference: https://www.rabbitmq.com/configure.html#config-file
 
 Reference: https://www.rabbitmq.com/management.html
 
+From your project directory, create a file called 'rabbitmq.conf' with the following content:
+
 ```
 loopback_users.guest = false
 listeners.tcp.default = 5672
@@ -135,6 +139,8 @@ rabbitmq.conf
 
 ## Create a Dockerfile file
 
+From your project directory, create a file called 'Dockerfile' with the following content:
+
 ```
 FROM rabbitmq:3-management
 
@@ -144,6 +150,8 @@ COPY definitions.json /etc/rabbitmq/definitions.json
 Dockerfile
 
 ## Create a docker-compose.yml file
+
+From your project directory, create a file called 'docker-compose.yml' with the following content:
 
 ```
 version: '3.7'
@@ -162,13 +170,17 @@ docker-compose.yml
 
 ## Run docker compose
 
-... to do.
+From your project directory, , start up your application by running the following command:
+
+```
+docker-compose up
+```
 
 See also https://docs.docker.com/compose/gettingstarted/
 
 ## Browse the Management Console
 
-Open https://localhost:15672 to see the Management Console
+Open https://localhost:15672 to see the Management Console.
 
 You can log in either with the default account:
 
