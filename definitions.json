@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "name": "guest",
+      "password": "guest",
+      "tags": "administrator"
+    },
+    {
+      "name": "john",
+      "password": "s3cr3t",
+      "tags": "administrator"
+    }    
+  ],
+  
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  
+  "permissions": [
+    {
+      "user": "guest",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "john",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  
+  "parameters": [],
+  
+  "policies": [],
+  
+  "exchanges": [
+    {
+      "name": "foo.exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  
+  "queues": [
+    {
+      "name": "foo.bar",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "foo.qux",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "foo.waldo",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }    
+  ],
+  
+  "bindings": [
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.bar",
+      "destination_type": "queue",
+      "routing_key": "foo.bar.#",
+      "arguments": {}
+    },
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.qux",
+      "destination_type": "queue",
+      "routing_key": "foo.qux.#",
+      "arguments": {}
+    },
+    {
+      "source": "foo.exchange",
+      "vhost": "/",
+      "destination": "foo.waldo",
+      "destination_type": "queue",
+      "routing_key": "foo.waldo.#",
+      "arguments": {}
+    }
+  ]
+  
+}
