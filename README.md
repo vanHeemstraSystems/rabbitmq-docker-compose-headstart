@@ -5,16 +5,30 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
-## Install Docker
+## Install Docker Engine
 
 See https://docs.docker.com/engine/install/centos/
 
-## verify Docker Version
+## Verify Docker Engine Version
 
 Run the following command after having installed Docker:
 
 ```
 docker --version
+```
+
+## Install Docker Compose
+
+See https://docs.docker.com/compose/install/
+
+```
+
+```
+
+## Verify Docker Compose Version
+
+```
+docker-compose --version
 ```
 
 ## Create a definitions.json file
