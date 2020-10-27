@@ -90,6 +90,7 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.bar",
+      "destination_type": "queue",
       "routing_key": "foo.bar.#",
       "arguments": {}
     },
@@ -97,6 +98,7 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.qux",
+      "destination_type": "queue",
       "routing_key": "foo.qux.#",
       "arguments": {}
     },
@@ -104,6 +106,7 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
       "source": "foo.exchange",
       "vhost": "/",
       "destination": "foo.waldo",
+      "destination_type": "queue",
       "routing_key": "foo.waldo.#",
       "arguments": {}
     }
