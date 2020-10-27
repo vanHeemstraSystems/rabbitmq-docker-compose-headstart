@@ -9,6 +9,14 @@ Code at https://github.com/ekim197711/springboot-rabbitmq
 
 See https://docs.docker.com/engine/install/centos/
 
+## verify Docker Version
+
+Run the following command after having installed Docker:
+
+```
+docker --version
+```
+
 ## Create a definitions.json file
 
 From your project directory, create a file called 'definitions.json' with the following content:
