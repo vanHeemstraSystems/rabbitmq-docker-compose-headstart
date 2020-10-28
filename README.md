@@ -5,6 +5,13 @@ Based on "RabbitMQ Custom Docker Image with Custom Configuration and Definitions
 
 Code at https://github.com/ekim197711/springboot-rabbitmq
 
+## Word of Warning
+
+TIP In creating your client applications, it’s important not to overcomplicate things with too many channels. On the wire in marshaled frames, channels
+are nothing more than an integer value that’s assigned to the messages that are passed between a server and client; in the RabbitMQ server and client,
+they represent more. There are memory structures and objects set up for each channel. The more channels you have in a connection, the more mem-
+ory RabbitMQ must use to manage the message flow for that connection. If you use them judiciously, you’ll have a happier RabbitMQ server.
+
 ## Prerequisites
 
 Install Google Chrome
